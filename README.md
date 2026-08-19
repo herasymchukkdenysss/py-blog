@@ -10,7 +10,8 @@ Let's go through all the steps:
    ```
    Copy `.env.example` to `.env` and replace `SECRET_KEY` with a unique secret
    key. Keep `DEBUG=True` for local development and set it to `False` in
-   production.
+   production. The project has an insecure fallback key so tests can run
+   without a `.env`; production must always provide its own `SECRET_KEY`.
 2. Start project `blog_system` inside the current directory (add . at the end of the command).
 3. Inside `py-blog` start application `blog`.
 4. Inside `blog/models.py` create models according to this diagram:
