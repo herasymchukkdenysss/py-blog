@@ -25,5 +25,6 @@ staticfiles/
 # Environment and OS files
 .env
 .env.*
+!.env.example
 .DS_Store
 Thumbs.db
